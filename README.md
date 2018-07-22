@@ -1,3 +1,3 @@
-# docker-app
+# node-browsers-docker-app
 
-This is a simple Docker image with [docker-app](https://github.com/docker/app) installed.
+This is a extends CircleCI's awesome "Browsers" image by [docker-app](https://github.com/docker/app).
