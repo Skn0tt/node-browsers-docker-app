@@ -7,7 +7,6 @@ RUN export VERSION=$(node get-latest-version.js); wget https://github.com/docker
 FROM circleci/node:9-browsers
 
 COPY --from=build-env docker-app-linux.tar.gz .
-RUN tar xf docker-app-linux.tar.gz
-RUN rm docker-app-linux.tar.gz
-RUN cp docker-app-linux /usr/local/bin/docker-app
-RUN rm docker-app-linux
+RUN sudo tar xf docker-app-linux.tar.gz
+RUN sudo cp docker-app-linux /usr/local/bin/docker-app
+RUN sudo rm docker-app-linux docker-app-linux.tar.gz
