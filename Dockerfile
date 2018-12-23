@@ -1,4 +1,4 @@
-FROM node:9.11.2 AS build-env
+FROM busybox AS build-env
 
 RUN wget https://github.com/docker/app/releases/download/v0.6.0/docker-app-linux.tar.gz
 
